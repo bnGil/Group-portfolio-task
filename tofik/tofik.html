@@ -15,10 +15,10 @@
         <header>
             <nav class="navbar">
                 <div class="nav-container">
-                    <img class="logo" src="./images/portfolio-2.gif" alt="logo" />
+                    <img id="logo" class="logo" src="./images/portfolio-2.gif" alt="logo" />
                     <ul>
-                        <li><a href="./tofik.html">Home</a></li>
-                        <li><a href="./Projects.html">Projects</a></li>
+                        <li><a href="#logo">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
                         <li><a href="../index.html">Main Portfolios Page</a></li>
                     </ul>
                 </div>
@@ -28,31 +28,57 @@
         <!-- main -->
         <main class="main-container">
             <!-- left side -->
-            <div class="cards-container">
-                <section class="about-card">
-                    <img src="./images/tofik-profile.jpeg" alt="profile picture" width="450" />
-                    <h2>My name is Tofik and i am a programmer <i class="fas fa-desktop"></i></h2>
-                    <p>
-                        I was born in 1991, in Shfar`am city. I love programming aswel as cats and dogs and many other things. Sometimes i play the
-                        guitar just for fun ^^. I speak 4 languages Arabic, English, Hebrew, and Italian fluent in that order. want to know more about
-                        me? follow me on my social media on the bottom of the page!
-                    </p>
+            <div class="container">
+                <section id="showcase">
+                    <div class="about-card">
+                        <img src="./images/tofik-profile.jpeg" alt="profile picture" />
+                        <h2>My name is Tofik and i am a programmer <i class="fas fa-desktop"></i></h2>
+                        <p>
+                            I was born in 1991, in Shfar`am city. I love programming aswel as cats and dogs and many other things. Sometimes i play
+                            the guitar just for fun ^^. I speak 4 languages Arabic, English, Hebrew, and Italian fluent in that order. want to know
+                            more about me? follow me on my social media on the bottom of the page!
+                        </p>
+                    </div>
+                </section>
+                <!-- aside -->
+                <aside class="others">
+                    <div class="dots-1"></div>
+                    <div class="style1"></div>
+                </aside>
+            </div>
+
+            <!-- left side -->
+            <div class="container2">
+                <h1>My Projects</h1>
+                <section id="projects">
+                    <div class="project-item">
+                        <img src="./images/tesla.png" alt="tesla" />
+                        <h2>Tesla Model 3 Clone</h2>
+                        <p>Dont't mind me for stealing some ideas &#128517;</p>
+                    </div>
+
+                    <div class="project-item">
+                        <img src="./images/hangedman.png" alt="hangedman" />
+                        <h2>HangedMan!</h2>
+                        <p>Good for passing the time! try it out!</p>
+                        <a class="game-btn fade-in" href="./hangedman/index.html" target="_blank"><span>Play The Game!</span></a>
+                    </div>
+
+                    <div class="project-item">
+                        <img src="./images/pixar.png" alt="pixar" />
+                        <h2>Pixar Error Page</h2>
+                        <p>Just an error page &#128580;</p>
+                    </div>
+
+                    <div class="project-item">
+                        <img src="./images/hotel.png" alt="hotel" />
+                        <h2>Hotel Website</h2>
+                        <p>Make sure to checkout my new hotel, you're welcome anytime! first night for free &#128516;</p>
+                    </div>
                 </section>
             </div>
-            <!-- aside -->
-            <aside class="others">
-                <h2>aside content</h2>
-                <h2>aside content</h2>
-                <h2>aside content</h2>
-                <h2>aside content</h2>
-                <h2>aside content</h2>
-                <h2>aside content</h2>
-                <h2>aside content</h2>
-                <h2>aside content</h2>
-            </aside>
-
-            <!-- footer -->
         </main>
+        <!-- footer -->
         <footer class="footer">
             <ul class="media">
                 <li>
