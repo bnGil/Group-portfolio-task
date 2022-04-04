@@ -1,47 +1,125 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    background-color: beige;
+body {
+  height: 100vh;
+  background-color: beige;
 }
 
 header h1 {
-    text-align: center;
-    margin-top: 3rem;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: start;
-    max-width: 960px;
-    margin: 4rem auto;
-    height: 100%;
-    /* flex-wrap: wrap; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  max-width: 960px;
+  margin: 4rem auto;
+  height: 100%;
+  /* flex-wrap: wrap; */
 }
 
 .card {
-    background-color: white;
-    width: 200px;
-    height: 300px;
-    border: 1px solid grey;
-    border-radius: 10px;
-    margin: 1rem;
-    box-shadow: 0 0 10px darkgrey;
-    transition: all 0.3s;
+  background-color: white;
+  width: 200px;
+  height: 300px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 1rem;
+  box-shadow: 0 0 10px darkgrey;
+  transition: all 0.3s;
+}
+.samer {
+  background: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.samer figure {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  flex: 1;
+}
+.samer figure img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.samer figure figcaption {
+  padding-top: 0.8rem;
+  font-size: small;
 }
 
+.samer .socialnav {
+  flex: 1;
+}
+.samer .socialnav nav ul {
+  list-style: none;
+  display: flex;
+}
+.samer .socialnav nav ul li {
+  display: inline-block;
+  flex: 1;
+  margin-left: 3px;
+}
+.samer .socialnav nav ul li a {
+  text-decoration: none;
+}
+.samer .socialnav nav ul li a i {
+  transition: all 0.5 ease-in-out;
+}
+.samer .socialnav nav ul li a i:hover {
+  transform: scale(1.1);
+}
 .card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
-
-@media (max-width:768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
+.portfolio {
+  position: relative;
+  padding: 0 0.2rem;
+  flex: 1;
+}
+.portfolio span {
+  position: relative;
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #000;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+.portfolio span a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5 ease-in-out;
+  color: inherit;
+}
+.portfolio span a:hover {
+  background-color: #000;
+  color: #fff;
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
