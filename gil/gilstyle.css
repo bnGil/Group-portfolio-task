@@ -57,7 +57,7 @@
     margin-left: 15px;
 }
 
-img {
+header img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -79,7 +79,7 @@ main {
 }
 
 .section-header {
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 20px;
     color: var(--prim-color-blue);
 }
@@ -89,7 +89,106 @@ main {
     max-width: 80%;
 }
 
+/* ----------portfolio--------------------- */
 .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio .img-container .tesla {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.portfolio .img-container .pixar {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.portfolio .img-container .dropbox {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.portfolio .img-container img {
+    box-shadow: 0 0 10px #ddd;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+.portfolio .img-container img:hover {
+    transform: scale(1.1);
+}
+
+/* ---------contact------------- */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    max-width: 960px;
+}
+
+#contact-form .container {
+    width: 400px;
+}
+
+#contact-form p {
+    margin-bottom: 40px;
+}
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+    height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: var(--prim-color-blue);
+}
+
+.form-btn {
+    margin-top: 0;
+    margin-bottom: 20px;
+    border: 2px solid var(--prim-color-blue);
+}
+
+.form-btn:hover {
+    color: var(--prim-color-white);
+    background-color: var(--prim-color-blue);
 }
 
 /* -----------footer------------ */
@@ -114,4 +213,15 @@ footer h4 {
 .social i {
     color: var(--prim-color-white);
     margin: 20px 10px;
+}
+
+/* -------------mobile----------- */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column-reverse;
+    }
+
+    .header-btn {
+        margin-top: 20px;
+    }
 }
