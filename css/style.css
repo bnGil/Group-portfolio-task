@@ -1,125 +1,161 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 body {
-  height: 100vh;
-  background-color: beige;
+    height: 100vh;
+    background-color: beige;
 }
 
 header h1 {
-  text-align: center;
-  margin-top: 3rem;
+    text-align: center;
+    margin-top: 3rem;
 }
 
 .container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: start;
-  max-width: 960px;
-  margin: 4rem auto;
-  height: 100%;
-  /* flex-wrap: wrap; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    max-width: 960px;
+    margin: 4rem auto;
+    height: 100%;
+    /* flex-wrap: wrap; */
 }
 
 .card {
-  background-color: white;
-  width: 200px;
-  height: 300px;
-  border: 1px solid grey;
-  border-radius: 10px;
-  margin: 1rem;
-  box-shadow: 0 0 10px darkgrey;
-  transition: all 0.3s;
-}
-.samer {
-  background: gold;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-}
-.samer figure {
-  margin-top: 0.8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  flex: 1;
-}
-.samer figure img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.samer figure figcaption {
-  padding-top: 0.8rem;
-  font-size: small;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 1rem;
+    box-shadow: 0 0 10px darkgrey;
+    transition: all 0.3s;
 }
 
-.samer .socialnav {
-  flex: 1;
+.samer,
+.gil,
+.tofik,
+.eden {
+    background: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
 }
-.samer .socialnav nav ul {
-  list-style: none;
-  display: flex;
+
+.samer figure,
+.gil figure,
+.tofik figure,
+.eden figure {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex: 1;
 }
-.samer .socialnav nav ul li {
-  display: inline-block;
-  flex: 1;
-  margin-left: 3px;
+
+.samer figure img,
+.gil figure img,
+.tofik figure img,
+.eden figure img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
 }
-.samer .socialnav nav ul li a {
-  text-decoration: none;
+.samer figure figcaption,
+.gil figure figcaption,
+.tofik figure figcaption,
+.eden figure figcaption {
+    padding-top: 0.8rem;
+    font-size: small;
 }
-.samer .socialnav nav ul li a i {
-  transition: all 0.5 ease-in-out;
+
+.samer .socialnav,
+.gil .socialnav,
+.tofik .socialnav,
+.eden .socialnav {
+    flex: 1;
 }
-.samer .socialnav nav ul li a i:hover {
-  transform: scale(1.1);
+.samer .socialnav nav ul,
+.gil .socialnav nav ul,
+.tofik .socialnav nav ul,
+.eden .socialnav nav ul {
+    list-style: none;
+    display: flex;
+}
+.samer .socialnav nav ul li,
+.gil .socialnav nav ul li,
+.tofik .socialnav nav ul li,
+.eden .socialnav nav ul li {
+    display: inline-block;
+    flex: 1;
+    margin-left: 3px;
+}
+.samer .socialnav nav ul li a,
+.gil .socialnav nav ul li a,
+.tofik .socialnav nav ul li a,
+.eden .socialnav nav ul li a {
+    text-decoration: none;
+}
+.samer .socialnav nav ul li a i,
+.gil .socialnav nav ul li a i,
+.tofik .socialnav nav ul li a i,
+.eden .socialnav nav ul li a i {
+    transition: all 0.5 ease-in-out;
+    margin-top: 20px;
+}
+.samer .socialnav nav ul li a i:hover,
+.gil .socialnav nav ul li a i:hover,
+.tofik .socialnav nav ul li a i:hover,
+.eden .socialnav nav ul li a i:hover {
+    transform: scale(1.1);
 }
 .card:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 .portfolio {
-  position: relative;
-  padding: 0 0.2rem;
-  flex: 1;
+    position: relative;
+    padding: 0 0.2rem;
+    flex: 1;
 }
 .portfolio span {
-  position: relative;
-  display: inline-block;
-  font-size: 1.8rem;
-  color: #000;
-  text-transform: uppercase;
-  animation: flip 2s infinite;
-  animation-delay: calc(0.2s * var(--i));
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #000;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(0.2s * var(--i));
 }
 .portfolio span a {
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.5 ease-in-out;
-  color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5 ease-in-out;
+    color: inherit;
 }
 .portfolio span a:hover {
-  background-color: #000;
-  color: #fff;
+    background-color: #000;
+    color: #fff;
 }
 @keyframes flip {
-  0%,
-  80% {
-    transform: rotateY(360deg);
-  }
+    0%,
+    80% {
+        transform: rotateY(360deg);
+    }
 }
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
